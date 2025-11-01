@@ -58,7 +58,7 @@ const user = await api.get<User>('/users/1');
 - Добавьте типизацию для response
 
 </details>
----
+
 
 ## Задача 11.2: Request/Response interceptors 🟡
 
@@ -125,7 +125,7 @@ api.addResponseInterceptor((response) => {
 - Response interceptors могут проверить статус и бросить ошибку
 
 </details>
----
+
 
 ## Задача 11.3: Автоматический refresh токена 🔴
 
@@ -192,7 +192,7 @@ class AuthApiClient {
 - Сохраните новый токен в localStorage
 
 </details>
----
+
 
 ## Задача 11.4: Query parameters builder 🟢
 
@@ -248,7 +248,7 @@ const query = new QueryBuilder()
 - Пропустить null/undefined значения
 
 </details>
----
+
 
 ## Задача 11.5: Загрузка файла с прогрессом 🟡
 
@@ -306,7 +306,7 @@ await uploadFile(file, '/api/upload', (progress) => {
 - Используйте FormData для отправки файла
 
 </details>
----
+
 
 ## Задача 11.6: AbortController для отмены запросов 🟡
 
@@ -364,7 +364,7 @@ await searchService.search('abcde'); // выполнится
 - Обрабатывайте AbortError отдельно (не показывать как ошибку)
 
 </details>
----
+
 
 ## Задача 11.7: Пагинация с курсором 🟡
 
@@ -432,7 +432,7 @@ await pagination.loadMore('/api/posts'); // загрузит следующую 
 - Предотвращайте двойную загрузку через флаг loading
 
 </details>
----
+
 
 ## Задача 11.8: Batch API requests 🟡
 
@@ -512,7 +512,7 @@ const [user, posts, comments] = await Promise.all([
 - После batch ответа распределите результаты
 
 </details>
----
+
 
 ## Задача 11.9: Retry с разными стратегиями 🟡
 
@@ -597,7 +597,7 @@ function calculateDelay(attempt: number, options: RetryOptions): number {
 - shouldRetry позволяет пропустить retry для определенных ошибок
 
 </details>
----
+
 
 ## Задача 11.10: GraphQL клиент 🔴
 
@@ -676,7 +676,7 @@ const user = await client.query<User>(`
 - data содержит результат
 
 </details>
----
+
 
 ## Задача 11.11: Polling с адаптивным интервалом 🟡
 
@@ -762,7 +762,7 @@ polling.start();
 - Сравнение данных: deep equality или JSON.stringify
 
 </details>
----
+
 
 ## Задача 11.12: Request deduplication 🟡
 

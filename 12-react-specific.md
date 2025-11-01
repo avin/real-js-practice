@@ -52,7 +52,7 @@ function UserProfile({ userId }: { userId: string }) {
 - Обновляйте состояния последовательно
 
 </details>
----
+
 
 ## Задача 12.2: useDebounce hook 🟢
 
@@ -100,7 +100,7 @@ function SearchComponent() {
 - Cleanup функция с clearTimeout
 
 </details>
----
+
 
 ## Задача 12.3: usePrevious hook 🟢
 
@@ -138,7 +138,7 @@ function Counter({ count }: { count: number }) {
 - Вернуть ref.current (значение до обновления)
 
 </details>
----
+
 
 ## Задача 12.4: useLocalStorage hook 🟡
 
@@ -201,7 +201,7 @@ function App() {
 - Обрабатывать ошибки JSON.parse
 
 </details>
----
+
 
 ## Задача 12.5: useIntersectionObserver hook 🟡
 
@@ -264,7 +264,7 @@ function LazyImage({ src }: { src: string }) {
 - Cleanup: observer.disconnect()
 
 </details>
----
+
 
 ## Задача 12.6: useWindowSize hook 🟢
 
@@ -317,7 +317,7 @@ function ResponsiveComponent() {
 - Cleanup: removeEventListener
 
 </details>
----
+
 
 ## Задача 12.7: Оптимизация Context с разделением 🟡
 
@@ -372,7 +372,7 @@ function UserProfile() {
 - useMemo для мемоизации результата selector
 
 </details>
----
+
 
 ## Задача 12.8: useAsync hook для асинхронных операций 🟡
 
@@ -446,7 +446,7 @@ function UserProfile({ userId }: { userId: string }) {
 - immediate параметр для автоматического вызова
 
 </details>
----
+
 
 ## Задача 12.9: Form hook с валидацией 🟡
 
@@ -562,7 +562,7 @@ function LoginForm() {
 - Показывайте ошибки только для touched полей
 
 </details>
----
+
 
 ## Задача 12.10: Виртуализация списка (React) 🔴
 
@@ -644,7 +644,7 @@ function App() {
 - Общая высота контейнера = items.length * itemHeight
 
 </details>
----
+
 
 ## Задача 12.11: useMemoCompare для глубокого сравнения 🟡
 
@@ -698,7 +698,7 @@ function Component({ filters }) {
 - Верните ref.current
 
 </details>
----
+
 
 ## Задача 12.12: Compound Components паттерн 🔴
 
