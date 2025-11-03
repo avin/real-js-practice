@@ -159,10 +159,32 @@ interface Skill {
 }
 
 class DynamicFields {
-  addField(): void {}
-  removeField(id: string): void {}
-  getAllValues(): Skill[] {}
+  private fields: Skill[] = [];
+  private container: HTMLElement;
+
+  constructor(container: HTMLElement) {
+    this.container = container;
+  }
+
+  addField(initialValue: string = ''): void {
+    // Создать DOM-элемент для нового поля,
+    // добавить его в container и записать в this.fields
+  }
+
+  removeField(id: string): void {
+    // Удалить DOM-элемент поля и удалить запись из this.fields
+  }
+
+  getAllValues(): Skill[] {
+    return this.fields;
+  }
 }
+
+// Пример использования:
+// const list = document.querySelector('#skills');
+// const manager = new DynamicFields(list!);
+// document.querySelector('#add-skill')!
+//   .addEventListener('click', () => manager.addField());
 ```
 
 <details>
@@ -171,7 +193,7 @@ class DynamicFields {
 - Генерируйте уникальный id для каждого поля (Date.now() или счетчик)
 - Храните массив полей в состоянии
 - При удалении фильтруйте массив
-- Рендерите поля динамически
+- Рендерите поля динамически в переданном контейнере
 
 </details>
 
